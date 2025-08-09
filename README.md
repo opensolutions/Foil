@@ -5,12 +5,15 @@ FOIL
 
 -------
 
-[![travis-ci status](https://img.shields.io/travis/FoilPHP/Foil.svg?style=flat-square)](https://travis-ci.org/FoilPHP/Foil)
-[![codecov.io](https://img.shields.io/codecov/c/github/FoilPHP/Foil.svg?style=flat-square)](http://codecov.io/github/FoilPHP/Foil?branch=master)
 [![license](https://img.shields.io/packagist/l/foil/foil.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![release](https://img.shields.io/github/release/FoilPHP/foil.svg?style=flat-square)](https://github.com/FoilPHP/Foil/releases/latest)
+
 
 -------
+
+Cloned from the abandoned [FoilPHP/Foil](https://github.com/FoilPHP/Foil) in August 2025.
+
+-------
+
 
 **Foil** brings all the flexibility and power of modern template engines to native PHP templates. Write simple, clean and concise templates with nothing more than PHP.
 
