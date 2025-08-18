@@ -182,7 +182,7 @@ class Template implements AliasAllowedTemplateInterface
     /**
      * @inheritdoc
      */
-    public function insert($template, array $data = [], array $only = null)
+    public function insert($template, array $data = [], ?array $only = null)
     {
         $this->engine->fire('f.template.prepartial', $template, $data, $this);
         $partial = $this->engine->render($template, $this->buildContext($data, $only));
@@ -199,7 +199,7 @@ class Template implements AliasAllowedTemplateInterface
      * @param  array  $only
      * @return string
      */
-    public function insertif($template, array $data = [], array $only = null)
+    public function insertif($template, array $data = [], ?array $only = null)
     {
         return $this->engine->find($template) ? $this->insert($template, $data, $only) : '';
     }
@@ -207,7 +207,7 @@ class Template implements AliasAllowedTemplateInterface
     /**
      * @inheritdoc
      */
-    public function layout($layout, array $data = [], array $only = null)
+    public function layout($layout, array $data = [], ?array $only = null)
     {
         $file = file_exists($layout) ? $layout : $this->engine->find($layout);
         if (! $file) {
@@ -296,7 +296,7 @@ class Template implements AliasAllowedTemplateInterface
      * @param  array $only
      * @return array
      */
-    protected function buildContext(array $data = [], array $only = null)
+    protected function buildContext(array $data = [], ?array $only = null)
     {
         $now = is_null($only)
             ? $this->data()
