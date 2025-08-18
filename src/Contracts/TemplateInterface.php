@@ -36,7 +36,7 @@ interface TemplateInterface
      * @param  array|void $only     Variable names partial have to inherit from current context
      * @return string
      */
-    public function insert($template, array $data = [], array $only = null);
+    public function insert($template, array $data = [], ?array $only = null);
 
     /**
      * Set a layout to be used for template
@@ -45,7 +45,7 @@ interface TemplateInterface
      * @param array      $data   Layout-specific data
      * @param array|void $only   Variable names layout have to inherit from current context
      */
-    public function layout($layout, array $data = [], array $only = null);
+    public function layout($layout, array $data = [], ?array $only = null);
 
     /**
      * Returns the content for a given section, or a default text if section is not present
