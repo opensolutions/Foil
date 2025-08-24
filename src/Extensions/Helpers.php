@@ -310,7 +310,7 @@ class Helpers implements ExtensionInterface, TemplateAware
      * @param  mixed        $default Default
      * @return mixed
      */
-    public function filter($filters, $var, array $args = null, $default = '')
+    public function filter($filters, $var, ?array $args = null, $default = '')
     {
         return $this->template()->filter($filters, $this->variable($var, $default), $args);
     }
